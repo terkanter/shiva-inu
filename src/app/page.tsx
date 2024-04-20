@@ -62,7 +62,7 @@ const LinksSection = () => {
 }
 
 const socialItems = [
-    { Icon: TwitterIcon, link: "" },
+    { Icon: TelegramIcon, link: "" },
     { Icon: TwitterIcon, link: "" },
     { Icon: GekkoIcon, link: "" },
     // { Icon: TwitterIcon, link: "" },
