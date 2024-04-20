@@ -91,7 +91,7 @@ const SocialLinksSection = () => {
                 <div className="flex flex-row space-x-8 mt-8">
                     {socialItems.map(({ Icon, link }, index) => (
                         <a key={index} href={link} target="_blank" className="hover:scale-110 transition-all duration-150">
-                            <Icon />
+                            <Icon className="w-[50px] h-[50px] text-xl" />
                         </a>
                     ))}
                 </div>
