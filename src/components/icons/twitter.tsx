@@ -1,0 +1,11 @@
+import {HTMLAttributes} from "react";
+
+export const TwitterIcon = (props: HTMLAttributes<HTMLOrSVGElement>) => {
+    return (
+        <svg width="55" height="49" viewBox="0 0 55 49" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path
+                d="M23.5506 31.0358L8.94969 47.7436H3.9705L21.5728 27.6137L22.2493 26.84L21.6251 26.0236L2.68958 1.25641H16.6597L28.1181 16.4126L29.0484 17.6431L30.0652 16.483L43.4098 1.25641H48.3882L32.0446 19.9284L31.371 20.698L31.9879 21.5137L51.8237 47.7436H41.1818V45.281H44.5239H47.0496L45.5259 43.2667L15.7993 3.96616L15.4222 3.46769H14.7972H9.84695H7.30419L8.84898 5.4874L38.9274 44.813L41.1689 47.7436H38.2342L25.4944 31.0989L24.5611 29.8795L23.5506 31.0358Z"
+                fill="#AC0000" stroke="currentColor" strokeWidth="2.51282"/>
+        </svg>
+    )
+}
