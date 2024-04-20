@@ -41,12 +41,14 @@ const LinksSection = () => {
             <div className="flex flex-col md:flex-row md:space-x-8 my-16">
                 {linksItems.map((column, k) => (
                     <div className="flex flex-col space-y-4" key={k}>
-                        {column.map(({Icon, description}, index) => (
+                        {column.map(({Icon, description, link}, index) => (
                             <a
-                                href="/link"
+                                key={k + index}
+                                target="_blank"
+                                href={link}
                                 className="group max-w-[240px] flex flex-col gap-2"
                             >
-                                <div key={k + index} className="flex justify-center items-center bg-white p-4 px-8 group-hover:scale-110 transition-all duration-150 cursor-pointer">
+                                <div className="flex justify-center items-center bg-white p-4 px-8 group-hover:scale-110 transition-all duration-150 cursor-pointer">
                                     <Icon/>
                                 </div>
                                 <p className="text-xs font-light pr-4 uppercase text-wrap min-h-8">
@@ -88,7 +90,7 @@ const SocialLinksSection = () => {
                 </p>
                 <div className="flex flex-row space-x-8 mt-8">
                     {socialItems.map(({ Icon, link }, index) => (
-                        <a href={link} target="_blank" className="hover:scale-110 transition-all duration-150">
+                        <a key={index} href={link} target="_blank" className="hover:scale-110 transition-all duration-150">
                             <Icon />
                         </a>
                     ))}

@@ -16,9 +16,9 @@ export const Hero: React.FC = () => {
     const backgroundX = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
     const backgroundXReverse = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
 
-    const handleMouseMove = (e) => {
-        console.log(e.screenY, e.screenX, window.innerWidth, window.innerHeight)
-    }
+    // const handleMouseMove = (e) => {
+    //     console.log(e.screenY, e.screenX, window.innerWidth, window.innerHeight)
+    // }
 
     return (
         <div
