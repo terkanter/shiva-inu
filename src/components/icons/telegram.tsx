@@ -2,7 +2,7 @@ import {HTMLAttributes} from "react";
 
 export const TelegramIcon = (props: HTMLAttributes<HTMLOrSVGElement>) => {
     return (
-        <svg width="50px" height="50px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        <svg width="50px" height="50px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
              fill="white"
              xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve"
              style={{ fillRule:'evenodd', clipRule:'evenodd', strokeLinejoin:"round", strokeMiterlimit:1.41421 }}
