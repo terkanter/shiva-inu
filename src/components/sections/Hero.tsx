@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
                     className="px-6 flex flex-col gap-6 items-start"
                 >
                     <h1 className="text-6xl md:text-8xl font-bold">
-                        $HIVA INU
+                        SHIVA INU
                     </h1>
                     <div className="max-w-[300px] font-light text-xs uppercase md:text-base flex flex-col gap-4">
                         <p>
