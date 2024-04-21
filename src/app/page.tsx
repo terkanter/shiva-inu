@@ -13,7 +13,7 @@ export default function Home() {
                     <Navbar/>
                     <Hero/>
                     <div className="min-h-[10vh]"/>
-                    {/*<TokenAdress />*/}
+                    <TokenAdress />
                     {/*<ShivaMarquee/>*/}
                     <LinksSection/>
                     <div className="min-h-[10vh]"/>

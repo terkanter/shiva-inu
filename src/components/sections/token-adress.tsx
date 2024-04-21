@@ -24,7 +24,7 @@ const defaultAnimations = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.05,
+            duration: 0.03,
         },
     },
 };
@@ -99,28 +99,33 @@ export const AnimatedText = ({
 };
 export const TokenAdress: React.FC = () => {
     return (
-        <div className="min-h-screen-[50vh] py-16 h-full w-full flex flex-col items-center justify-center">
-            <motion.div
-                initial="hidden"
-                animate="visible"
-                className="p-16  border-white flex gap-2 flex-col items-center justify-center"
-                variants={{
-                    visible: {
-                        scale: 1,
-                        opacity: 1,
-                        transition: { duration: 0.5 }
-                    },
-                    hidden: {
-                        scale: 0.6,
-                        opacity: 0,
-                    },
-                }}
+        <div className="min-h-screen-[50vh] py-16 h-full w-full flex flex-col items-center justify-center ">
+            <div
+                // initial="hidden"
+                // animate="visible"
+                className="p-16 border-white flex gap-2 flex-col items-center justify-center gap-4"
+                // variants={{
+                //     visible: {
+                //         scale: 1,
+                //         opacity: 1,
+                //         transition: { duration: 0.5 }
+                //     },
+                //     hidden: {
+                //         scale: 0.6,
+                //         opacity: 0,
+                //     },
+                // }}
             >
-                <h3 className="text-2xl font-bold tracking-wider text-center">Token Adress</h3>
-                <p className="text-center">
-                    EQCcHkucQmtIwKivdWAli7uPguFdPW8qS00lqTIWLBGn9rNT
-                </p>
-            </motion.div>
+                <h3 className="text-2xl md:text-4xl font-bold tracking-wider text-center">Token Adress</h3>
+                <AnimatedText
+                    el="h2"
+                    text={[
+                        "EQCcHkucQmtIwKivdWAli7uPguFdPW8qS00lqTIWLBGn9rNT"
+                    ]}
+                    className="text-base md:text-xl"
+                    repeatDelay={10000}
+                />
+            </div>
         </div>
     )
 }
