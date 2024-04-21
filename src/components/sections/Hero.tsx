@@ -1,3 +1,4 @@
+'use client'
 import {useRef} from "react";
 import {motion, useScroll, useTransform} from "framer-motion";
 import {ButtonBuy} from "@/components/button";
@@ -27,7 +28,7 @@ export const Hero: React.FC = () => {
             // onMouseMove={(ev)=> handleMouseMove(ev)}
         >
             <motion.div
-                className="md:h-[993px] w-full z-20 relative flex flex-col items-start justify-start pt-32 md:pt-48"
+                className="md:h-[993px] w-full z-20 relative flex flex-col items-start justify-start pt-32 md:pt-36"
                 style={{ y: textY }}
             >
                 <div
@@ -47,12 +48,9 @@ export const Hero: React.FC = () => {
                     <ButtonBuy/>
                 </div>
             </motion.div>
-            <div className="hidden md:block pointer-events-none">
+            <div className="hidden lg:block pointer-events-none">
                 <motion.div
-                    style={{
-                        // y: textY,
-                    }}
-                    className="absolute right-[36px] top-[44px] z-20"
+                    className="absolute right-[36px] top-[44px] z-20 "
                 >
                     <Image
                         priority
@@ -60,6 +58,7 @@ export const Hero: React.FC = () => {
                         src='/shiva-large.png'
                         alt="shiva-big"
                         width={768} height={859}
+                        className=""
                     />
                 </motion.div>
                 {/*BOTTOM LEFT*/}
@@ -69,7 +68,7 @@ export const Hero: React.FC = () => {
                         // y: textY,
                     }}
                 >
-                    <Clouds2Icon/>
+                    <Clouds2Icon className=""/>
                 </motion.div>
                 <motion.div
                     className="absolute z-20 bottom-[-15%] right-[-12%] pointer-events-none"
@@ -91,7 +90,7 @@ export const Hero: React.FC = () => {
                 </motion.div>
             </div>
 
-            <div className="flex items-center md:hidden relative mb-24 ">
+            <div className="flex items-center lg:hidden relative mb-24 ">
                 <motion.div
                     style={{
                         // y: textY,
