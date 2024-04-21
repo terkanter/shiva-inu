@@ -122,7 +122,7 @@ export const TokenAdress: React.FC = () => {
                     text={[
                         "EQCcHkucQmtIwKivdWAli7uPguFdPW8qS00lqTIWLBGn9rNT"
                     ]}
-                    className="text-base md:text-xl"
+                    className="text-base md:text-xl text-center"
                     repeatDelay={10000}
                 />
             </div>
