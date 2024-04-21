@@ -26,7 +26,7 @@ export const SocialLinksSection = () => {
                     SOCIALS
                 </h2>
                 <p className="uppercase text-xl font-light">
-                    Join the $hiva community
+                    Join the shiva community
                 </p>
                 <div className="flex flex-row space-x-8 mt-8">
                     {socialItems.map(({ Icon, link }, index) => (
