@@ -438,7 +438,6 @@ const HeroMobile = ({}) => {
 
 export const Hero: React.FC = () => {
     const introOut = useStore(({introOut}) => introOut)
-    const setIntroOut = useStore(({setIntroOut}) => setIntroOut)
 
     if (!introOut) {
         return (

@@ -18,9 +18,9 @@
 }
 
 .wrapper.out {
-    transition: transform 2000ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transition: transform 1500ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
     transform: translate3d(0, -100%, 0);
-    transition-delay: calc(2000ms + 0ms);
+    transition-delay: calc(1500ms + 0ms);
 }
 
 .wrapper.start {
@@ -30,9 +30,9 @@
 .wrapper .relative {
     padding: 30px 32.5px;
 
-    transition: transform 2000ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transition: transform 1500ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
     transform: translate3d(0, 850px, 0);
-    transition-delay: calc(2000ms + 0ms);
+    transition-delay: calc(1500ms + 0ms);
 
     height: 100%;
     display: flex;
@@ -50,7 +50,7 @@
 @media (min-width: 600px) {
     .translate {
         transform: translate3d(0, -100%, 0);
-        transition: transform 2000ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        transition: transform 1500ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
     }
 }
 
