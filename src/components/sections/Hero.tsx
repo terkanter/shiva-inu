@@ -52,6 +52,7 @@ export const AnimatedHeroContent = ({ }) => {
                     <p>
                         {'Utilizing community power in the growing TON DeFi ecosystem.'.split(' ').map((char, index) => (
                             <motion.span
+                                key={index}
                                 variants={itemVariants}
                             >
                                 {char}{' '}
@@ -62,6 +63,7 @@ export const AnimatedHeroContent = ({ }) => {
                     <p>
                         {'A Proper memecoin, Done right.'.split(' ').map((char, index) => (
                             <motion.span
+                                key={index}
                                 variants={itemVariants}
                             >
                                 {char}{' '}
@@ -102,6 +104,7 @@ export const HeroContent = ({y, showButton = true}) => {
         </motion.div>
     )
 }
+HeroContent.displayName = 'HeroContent'
 
 export const HeroWrapper = forwardRef((props, ref) => {
     return (

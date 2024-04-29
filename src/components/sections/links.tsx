@@ -55,7 +55,7 @@ export const LinksSection = () => {
         }
 
 
-        }, [isInView]);
+        }, [isInView, controls]);
 
     return (
         <motion.div
