@@ -1,0 +1,61 @@
+.root {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.wrapper.out {
+    transition: transform 2000ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transform: translate3d(0, -100%, 0);
+    transition-delay: calc(2000ms + 0ms);
+}
+
+.wrapper.start {
+    transform: translate3d(0, calc(var(--index) * 5% + 100%), 0);
+}
+
+.wrapper .relative {
+    padding: 30px 32.5px;
+
+    transition: transform 2000ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transform: translate3d(0, 850px, 0);
+    transition-delay: calc(2000ms + 0ms);
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper .show {
+    transition: transform 1600ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transition-delay: calc(1 * 75ms);
+    transform: translate3d(0, 0, 0);
+}
+
+
+@media (min-width: 600px) {
+    .translate {
+        transform: translate3d(0, -100%, 0);
+        transition: transform 2000ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+}
+
+@media (min-width: 599.5px) {
+    .translate {
+        transform: translate3d(0, -105%, 0);
+    }
+}

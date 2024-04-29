@@ -6,6 +6,7 @@ import {LinksSection} from "@/components/sections/links";
 import {TokenAdress} from "@/components/sections/token-adress";
 
 export default function Home() {
+
     return (
         <main className="max-w-[100vw] overflow-x-hidden">
             <div className="relative w-full min-h-screen flex flex-col items-center bg-black z-20">

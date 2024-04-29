@@ -19,13 +19,15 @@ const linksItems = [
     [
         {Icon: GekoTerminalIcon, label: "", description: "Chart Pool 1 ", link: "https://www.geckoterminal.com/ton/pools/EQBiVvLj4-gIt2eYOLC1hfjF1MzurRzGqTJH-FguyZw-EsCg\n"},
         {Icon: DexScreenerIcon, label: "", description: "Chart Pool 2", link: "https://dexscreener.com/ton/eqagdnihcgj_r0fb94wsyjhq_ktrdc0sp2xtf_saafg0zpbs\n"},
-        {Icon: TonRaflesIcon, label: "", description: "Future Team Fund that was bought back", link: "https://tonraffles.app/lock/EQCcHkucQmtIwKivdWAli7uPguFdPW8qS00lqTIWLBGn9rNT\n"},
-        {Icon: TonScreenerIcon, label: "", description: "1% to Pavel Durov", link: "https://tonviewer.com/transaction/43f2293cff27700c44bb11f2db17091391118db7cb38f897ead2ffe23c041ce2\n"}
     ],
     [
         // {Icon: TonRaflesIcon, label: "", description: "Dedust", link: "https://tonraffles.app/lock/EQAgDnIHcgj_R0fb94WsyjHq_ktrdC0sp2xTF_SaAfg0zpbs\n"},
         {Icon: TonRaflesIcon, label: "", description: "LP Locks Pool 1", link: "https://tonraffles.app/lock/EQBiVvLj4-gIt2eYOLC1hfjF1MzurRzGqTJH-FguyZw-EsCg\n"},
         {Icon: TonRaflesIcon, label: "", description: "LP Locks Pool 2", link: "https://tonraffles.app/lock/EQAgDnIHcgj_R0fb94WsyjHq_ktrdC0sp2xTF_SaAfg0zpbs\n"}
+    ],
+    [
+        {Icon: TonRaflesIcon, label: "", description: "Future Team Fund that was bought back", link: "https://tonraffles.app/lock/EQCcHkucQmtIwKivdWAli7uPguFdPW8qS00lqTIWLBGn9rNT\n"},
+        {Icon: TonScreenerIcon, label: "", description: "1% to Pavel Durov", link: "https://tonviewer.com/transaction/43f2293cff27700c44bb11f2db17091391118db7cb38f897ead2ffe23c041ce2\n"}
     ]
 ]
 
@@ -39,7 +41,7 @@ export const LinksSection = () => {
     const linksRef = useRef<HTMLDivElement>(null)
     const controls = useAnimation();
 
-    const isInView = useInView(linksRef, { once: true})
+    const isInView = useInView(linksRef, { once: false })
 
     useEffect(() => {
         const show = () => {
@@ -48,6 +50,8 @@ export const LinksSection = () => {
 
         if (isInView) {
             show();
+        } else {
+            controls.start("hidden");
         }
 
 
@@ -67,7 +71,6 @@ export const LinksSection = () => {
             >
                 LINKS
             </motion.h2>
-
             <div ref={linksRef} className="flex flex-col md:flex-row gap-4 md:gap-0 md:space-x-8 my-16">
                 {linksItems.map((column, k) => (
                     <div className="flex flex-col space-y-4" key={k}>

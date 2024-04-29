@@ -7,7 +7,7 @@ const getShivaMarqueeContent = () => new Array(20).fill('SHIVA INU').map((text, 
 export const ShivaMarquee = () => (
     <div className="h-10">
         <motion.div
-            className="w-screen rotate-1 h-12 bg-white opacity-70 font-bold flex items-center justify-center text-black whitespace-nowrap"
+            className="w-screen rotate-1 h-12 bg-neutral-400 font-bold flex items-center justify-center text-black whitespace-nowrap"
         >
             <Marquee direction="right">
                 {getShivaMarqueeContent()}
