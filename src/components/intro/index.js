@@ -14,6 +14,10 @@ export const Intro = () => {
     // const lenis = useStore(({ lenis }) => lenis)
 
     useEffect(() => {
+        window.history.scrollRestoration = 'manual'
+    }, []);
+
+    useEffect(() => {
         setTimeout(() => {
             setIsLoaded(true)
         }, 1500)

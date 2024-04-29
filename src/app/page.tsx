@@ -8,11 +8,6 @@ import {TokenAdress} from "@/components/sections/token-adress";
 import {useEffect} from "react";
 
 export default function Home() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        document.body.style.overflow = 'visible'
-    }, [])
-
     return (
         <main className="max-w-[100vw] overflow-x-hidden">
             {/*<ShivaSingleMarquee className="absolute -mt-[40px] left-0 right-0" />*/}
