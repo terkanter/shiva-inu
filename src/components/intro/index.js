@@ -14,7 +14,6 @@ export const Intro = () => {
     // const lenis = useStore(({ lenis }) => lenis)
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         setTimeout(() => {
             setIsLoaded(true)
         }, 1500)

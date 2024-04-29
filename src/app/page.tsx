@@ -1,11 +1,17 @@
+'use client'
 import {Navbar} from "@/components/navbar";
 import {Hero} from "@/components/sections/Hero";
 import {ShivaMarquee, ShivaSingleMarquee} from "@/components/shiva-marquee";
 import {SocialLinksSection} from "@/components/sections/socials";
 import {LinksSection} from "@/components/sections/links";
 import {TokenAdress} from "@/components/sections/token-adress";
+import {useEffect} from "react";
 
 export default function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        document.body.style.overflow = 'visible'
+    }, [])
 
     return (
         <main className="max-w-[100vw] overflow-x-hidden">
