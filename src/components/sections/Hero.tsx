@@ -216,7 +216,7 @@ const HeroDesktop = ({}) => {
 
             <div className="hidden lg:block pointer-events-none">
                 <motion.div
-                    className="absolute right-[36px] top-[44px] z-20 "
+                    className="absolute right-[36px] top-[44px] max-w-[600px] z-20 "
                     initial="hidden"
                     animate="visible"
                     variants={{
@@ -234,7 +234,7 @@ const HeroDesktop = ({}) => {
                     <Image
                         priority
                         unoptimized
-                        src='/shiva-large-2.png'
+                        src='/shiva-large.png'
                         alt="shiva-big"
                         width={768} height={859}
                         className=""
@@ -353,12 +353,12 @@ const HeroMobile = ({}) => {
                     style={{
                         // y: textY,
                     }}
-                    className="mx-[-9%] relative z-20 pointer-events-none"
+                    className="ml-[20%] mr-[-20%]  relative z-20 pointer-events-none"
                 >
                     <Image
                         priority
                         unoptimized
-                        src='/shiva-large-2.png'
+                        src='/shiva-large.png'
                         alt="shiva-big"
                         width={768} height={859}
                     />
